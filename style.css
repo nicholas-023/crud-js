@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+body > .container {
+  background-color: #021526;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input #warn {
+  position: absolute;
+  bottom: 0;
+  color: #ff3e3e;
+  transition: .5s;
+}
+
+.container h1 {
+  position: relative;
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+.container h1::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  width: 70%;
+  border-bottom: 2px solid #9db8d1;
+}
+
+.input form > label {
+  display: block;
+  margin-block: 10px;
+}
+
+.input input[type="text"] {
+  display: block;
+  padding: 8px;
+  width: 40rem;
+  color: #000;
+  border-radius: 5px;
+  font-size: 100%;
+}
+
+.input button {
+  padding: 10px 15px;
+  background-color: #0bd537;
+  border: none;
+  border-radius: 5px;
+}
+
+.output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f1c29;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 75px;
+  opacity: 0;
+  transition-duration: .5s;
+}
+
+.output:hover {
+  filter: none;
+}
+
+.output tr td {
+  padding: 10px 5px;
+}
+
+.output input {
+  width: 20rem;
+}
+
+.output .buttons button {
+  display: block;
+  width: 4rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-block: 5px;
+}
+
+.output .buttons button:first-child {
+  background-color: rgb(255, 255, 50);
+  color: #000;
+}
+
+.output .buttons button:nth-child(2) {
+  background-color: red;
+}
+
+.output .buttons button:last-child {
+  background-color: #1a68ad;
+  margin-top: 15px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.output input {
+  background-color: #0f1c29;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD Operations</h1>
+    <div class="input-output">
+      <div class="input"> 
+        <div id="warn"></div>
+        <form action="">
+          <label for="firstNameInput">
+            First Name
+            <input type="text" id="firstNameInput" placeholder="Input first name..">
+          </label>
+          <label for="lastNameInput">
+            Last Name
+            <input type="text" id="lastNameInput" placeholder="Input last name..">
+            <label for="">
+              <input type="checkbox" id="lastNameVoid">
+              I have no last name
+            </label>
+          </label>
+          <label for="">
+            Hobby
+            <input type="text" id="hobbyInput" placeholder="Input hobby..">
+          </label>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="output">
+        <table>
+          <tr>
+            <td>First Name</td>
+            <td> : </td>
+            <td><input type="text" disabled id="firstNameOutput"></td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td> : </td>
+            <td><input type="text" disabled id="lastNameOutput"></td>
+          </tr>
+          <tr>
+            <td>Hobby</td>
+            <td> : </td>
+            <td><input type="text" disabled id="hobbyOutput"></td>
+          </tr>
+        </table>
+        <div class="buttons">
+          <button id="editButton">Edit</button>
+          <button id="deleteButton">Delete</button>
+          <button id="finishButton">Finish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
